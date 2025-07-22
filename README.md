@@ -1,4 +1,4 @@
-# Quantum Computing: k-Coloring Problem with a Less-Than Oracle
+# Quantum Computing: k-Coloring Problem with Less-than and Greater-than Oracle
 
 ## Overview
 
