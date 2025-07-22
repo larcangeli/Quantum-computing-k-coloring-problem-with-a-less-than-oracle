@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository explores solving the **k-coloring problem** in quantum computing using Grover's algorithm and a **less-than oracle**. The k-coloring problem is a well-known graph theory problem that aims to assign colors to vertices of a graph such that no two adjacent vertices share the same color, and the total number of colors used does not exceed k.
+This repository explores solving the **k-coloring problem** in quantum computing using Grover's algorithm and **less-than + greater-than oracle**. The k-coloring problem is a well-known graph theory problem that aims to assign colors to vertices of a graph such that no two adjacent vertices share the same color, and the total number of colors used does not exceed k.
 
 Quantum computing offers a novel approach to solving this problem by leveraging Grover's algorithm for amplitude amplification combined with a less-than oracle for efficient state marking.
 
@@ -13,7 +13,7 @@ The repository contains code implemented primarily in **Jupyter Notebooks** and 
 
 ### Key Components
 - **Grover's Algorithm**: A quantum search algorithm used for amplitude amplification, allowing us to amplify the probability of valid solutions to the k-coloring problem.
-- **Less-Than Oracle**: A quantum oracle designed to mark states where a certain condition is fulfilled (e.g., states corresponding to vertex-color combinations that satisfy the coloring constraints).
+- **Less-Than/Greater-than Oracle**: A quantum oracle designed to mark states where a certain condition is fulfilled (e.g., states corresponding to vertex-color combinations that satisfy the coloring constraints).
 - **Quantum Circuit Design**: Implementation of modular quantum circuits, including oracles and Grover iterations.
 - **State Analysis**: Tools to analyze and visualize the amplitude distribution after applying the oracle.
 
@@ -72,8 +72,8 @@ Grover's algorithm is leveraged to amplify the probability of valid solutions to
 - **Amplitude amplification**: Boosting the amplitudes of states that satisfy the coloring constraints.
 - **Iterative searches**: Running multiple iterations of Grover's algorithm to refine the marked solutions.
 
-### Less-Than Oracle
-The less-than oracle is used to mark states that fulfill specific conditions. It uses modular quantum circuit design with:
+### Oracle
+The oracle is used to mark states that fulfill specific conditions. It uses modular quantum circuit design with:
 - **Controlled operations**: Multi-controlled gates to enforce conditions.
 - **Bit manipulation**: X gates to temporarily scramble states for conditional checks.
 
